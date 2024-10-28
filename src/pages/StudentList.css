@@ -1,0 +1,103 @@
+/* Centered container for the student list */
+.student-list-container {
+    max-width: 800px; /* Set a max width for the container */
+    margin: 70px auto 0; /* Center container horizontally and add top margin */
+    padding: 20px;
+    margin-left: 450px;
+    background-color: #f8f9fa; /* Light background */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333; /* Darker title color */
+}
+
+/* Filter section */
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.search-input, .form-select {
+    flex: 1;
+    animation: fadeIn 0.5s ease-in; /* Add fade-in animation */
+}
+
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    animation: fadeIn 0.5s ease-in; /* Add fade-in animation */
+}
+
+/* Table styling */
+.table th, .table td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+}
+
+.student-row {
+    transition: transform 0.3s; /* Animation effect */
+}
+
+.student-row:hover {
+    transform: scale(1.02); /* Slightly scale on hover */
+    background-color: #e9ecef; /* Light hover color */
+}
+
+/* Pagination styling */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    transition: background-color 0.3s;
+}
+
+.pagination button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    color: white;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .student-list-container {
+        padding: 15px;
+        max-width: 90%; /* Full width for smaller screens */
+    }
+
+    .filters {
+        flex-direction: column; /* Stack filters vertically */
+        align-items: flex-start; /* Align to the start */
+    }
+
+    .search-input, .form-select {
+        width: 100%; /* Full width for inputs on small screens */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 10px; /* Add bottom margin */
+    }
+
+    .table th, .table td {
+        font-size: 0.9rem; /* Smaller font on mobile */
+    }
+}

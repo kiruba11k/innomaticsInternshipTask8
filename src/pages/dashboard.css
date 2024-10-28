@@ -1,0 +1,117 @@
+.dashboard {
+    margin-top: 80px;
+    padding: 20px;
+    background-color: #f4f4f9;
+    justify-content: center;
+    align-items: center;
+    padding-left: 180px;
+  }
+  
+  .dashboard-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .student-summary {
+    margin-bottom: 30px;
+    background: #007bff;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .student-summary:hover {
+    transform: scale(1.05);
+  }
+  
+  .charts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three items per row */
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .chart-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 370px; /* Set a fixed height for uniformity */
+  }
+  
+  .chart-container:hover {
+    transform: translateY(-5px);
+  }
+  
+  .chart-title {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  .additional-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three items per row */
+    gap: 20px;
+  }
+  
+  .notifications,
+  .activity-log,
+  .class-performance {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 5px 0;
+  }
+  
+  /* Optional: Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .dashboard-title {
+      font-size: 2rem;
+    }
+  
+    .student-summary {
+      padding: 10px 20px;
+    }
+  
+    .chart-title {
+      font-size: 1.25rem;
+    }
+  
+    .charts, .grid-container {
+      grid-template-columns: 1fr; /* Stack items on smaller screens */
+    }
+  }
+  

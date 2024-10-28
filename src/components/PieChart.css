@@ -1,0 +1,6 @@
+.pie-chart-container {
+    height: 250px; /* Adjust the height as needed */
+    position: relative; /* Allows absolute positioning of the chart */
+}
+
+

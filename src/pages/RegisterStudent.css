@@ -1,0 +1,100 @@
+/* Centered and 3D Effect Styling */
+.register-student-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    margin-left: 500px;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    border-radius: 12px;
+    box-shadow: 20px 20px 60px #c8c8c8, -20px -20px 60px #ffffff;
+    transform: perspective(1px) translateZ(0);
+  }
+  
+  .form-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    position: relative;
+    animation: title-slide 1s ease-in-out;
+  }
+  
+  /* Two Fields Per Row Layout */
+  .form-row {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .form-row .form-group {
+    flex: 1;
+  }
+  
+  /* Input Field 3D Effect and Animation */
+  .form-input {
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.1), inset -4px -4px 8px rgba(255, 255, 255, 0.7);
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Submit Button 3D Animation */
+  .submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgba(0, 123, 255, 0.4), -5px -5px 15px rgba(0, 123, 255, 0.1);
+    transition: transform 0.2s, box-shadow 0.3s;
+  }
+  
+  .submit-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 10px 10px 20px rgba(0, 123, 255, 0.5), -10px -10px 20px rgba(0, 123, 255, 0.2);
+  }
+  
+  .submit-button:active {
+    transform: translateY(1px);
+    box-shadow: 4px 4px 8px rgba(0, 123, 255, 0.3), -4px -4px 8px rgba(0, 123, 255, 0.2);
+  }
+  
+  /* Title Slide Animation */
+  @keyframes title-slide {
+    0% {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .register-student-form {
+      padding: 20px;
+    }
+  
+    .form-row {
+      flex-direction: column;
+    }
+  
+    .form-title {
+      font-size: 2rem;
+    }
+  
+    .submit-button {
+      font-size: 1rem;
+    }
+  }
+  
