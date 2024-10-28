@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import './Navbar.css'; // For styling
+import './Navbar.css'; 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,12 +10,11 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <img src="https://www.innomatics.in/wp-content/uploads/2023/01/Innomatics-Logo1.png" alt="Logo" className="logo" /> {/* Logo image */}
-        {/* <h1>MyApp</h1> */}
+        <img src="https://www.innomatics.in/wp-content/uploads/2023/01/Innomatics-Logo1.png" alt="Logo" className="logo" /> 
       </div>
 
       <button className="toggle-button" onClick={toggleMenu}>
-        ☰ {/* Menu icon */}
+        ☰ 
       </button>
 
       <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
