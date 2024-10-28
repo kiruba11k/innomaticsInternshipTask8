@@ -3,7 +3,7 @@ import { useStudent } from '../context/StudentContext';
 import LineChart from '../components/LineChart'; 
 import BarChart from '../components/BarChart'; 
 import PieChart from '../components/PieChart'; 
-import './Dashboard.css'; // Import the CSS file for styling
+import './dashboard.css'; // Import the CSS file for styling
 
 function Dashboard() {
   const { students } = useStudent();
