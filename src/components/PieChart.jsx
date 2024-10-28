@@ -5,7 +5,7 @@ import {
     Legend,
 } from 'chart.js';
 import { Pie } from 'react-chartjs-2';
-import './PieChart.css'; // Import the CSS file for styling
+import './PieChart.css'; 
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
