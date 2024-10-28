@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useStudent } from '../context/StudentContext';
 import { useNavigate } from 'react-router-dom';
 import { Form, Button, Alert } from 'react-bootstrap';
-import './RegisterStudent.css'; // Import the CSS file
+import './RegisterStudent.css'; 
 
 function RegisterStudent() {
   const { addStudent } = useStudent();
