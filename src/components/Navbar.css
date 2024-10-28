@@ -1,4 +1,3 @@
-/* Full-width Navbar styling */
 .navbar {
     width: 100%;
     display: flex;
@@ -10,10 +9,10 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000; /* Keeps navbar on top of other elements */
+    z-index: 1000; 
   }
   
-  /* Logo styling */
+  
   .navbar-logo {
     display: flex;
     align-items: center;
@@ -26,7 +25,6 @@
     margin-right: 10px;
   }
   
-  /* Toggle button styling for smaller screens */
   .toggle-button {
     display: none;
     font-size: 24px;
@@ -36,10 +34,9 @@
     cursor: pointer;
   }
   
-  /* Navbar links styling */
   .navbar-links {
     display: flex;
-    gap: 20px; /* Space between links */
+    gap: 20px; 
   }
   
   .nav-link {
@@ -50,10 +47,10 @@
   
   .nav-link:hover,
   .active {
-    color: #4caf50; /* Color when the link is active or hovered */
+    color: #4caf50; 
   }
   
-  /* Responsive for smaller screens */
+ 
   @media (max-width: 768px) {
     .navbar-links {
       display: none;
