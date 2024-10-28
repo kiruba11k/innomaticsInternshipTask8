@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useStudent } from '../context/StudentContext';
 import { useNavigate, useParams } from 'react-router-dom';
 import { Form, Button, Alert, Container, Row, Col } from 'react-bootstrap';
-import './EditStudent.css'; // Import the custom CSS file
+import './EditStudent.css'; 
 
 function EditStudent() {
   const { students, updateStudent } = useStudent();
