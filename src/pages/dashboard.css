@@ -32,7 +32,7 @@
   
   .charts {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three items per row */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
     width: 100%;
   }
@@ -46,7 +46,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 370px; /* Set a fixed height for uniformity */
+    height: 370px; 
   }
   
   .chart-container:hover {
@@ -69,7 +69,7 @@
   
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three items per row */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
   }
   
@@ -96,7 +96,6 @@
     padding: 5px 0;
   }
   
-  /* Optional: Media Queries for Responsiveness */
   @media (max-width: 768px) {
     .dashboard-title {
       font-size: 2rem;
@@ -111,7 +110,7 @@
     }
   
     .charts, .grid-container {
-      grid-template-columns: 1fr; /* Stack items on smaller screens */
+      grid-template-columns: 1fr; 
     }
   }
   
