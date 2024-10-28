@@ -1,7 +1,7 @@
 import { useStudent } from '../context/StudentContext';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import './StudentList.css'; // Import the CSS file for styling
+import './StudentList.css'; 
 
 function StudentList() {
   const { students, deleteStudent } = useStudent();
@@ -9,14 +9,11 @@ function StudentList() {
   const [selectedClass, setSelectedClass] = useState('');
   const [sortOrder, setSortOrder] = useState('');
   
-  // Pagination state
   const [currentPage, setCurrentPage] = useState(1);
   const studentsPerPage = 10;
 
-  // Classes for filtering
   const classes = [...new Set(students.map(student => student.class))];
 
-  // Filtered and sorted students
   const filteredStudents = students
     .filter(student =>
       student.name.toLowerCase().includes(search.toLowerCase()) &&
@@ -28,7 +25,6 @@ function StudentList() {
       return 0;
     });
 
-  // Pagination logic
   const totalPages = Math.ceil(filteredStudents.length / studentsPerPage);
   const indexOfLastStudent = currentPage * studentsPerPage;
   const indexOfFirstStudent = indexOfLastStudent - studentsPerPage;
