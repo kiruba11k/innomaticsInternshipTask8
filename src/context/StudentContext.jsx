@@ -9,7 +9,7 @@ const StudentProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('/students.json') // Use the local JSON file path
+    fetch('/students.json') 
       .then((res) => res.json())
       .then((data) => {
         setStudents(data);
