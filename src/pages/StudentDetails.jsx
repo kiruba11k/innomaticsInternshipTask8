@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { useStudent } from '../context/StudentContext';
 import { Button } from 'react-bootstrap';
-import './StudentDetails.css'; // Import the custom CSS
+import './StudentDetails.css'; 
 
 function StudentDetails() {
   const { id } = useParams();
@@ -20,7 +20,6 @@ function StudentDetails() {
       <p className="student-detail">Phone: {student.phone}</p>
       <p className="student-detail">Address: {student.address}</p>
       
-      {/* Back button */}
       <Button variant="secondary" className="back-button" onClick={() => navigate(-1)}>
         Back
       </Button>
