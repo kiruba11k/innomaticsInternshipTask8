@@ -3,15 +3,13 @@ import { useStudent } from '../context/StudentContext';
 import LineChart from '../components/LineChart'; 
 import BarChart from '../components/BarChart'; 
 import PieChart from '../components/PieChart'; 
-import './dashboard.css'; // Import the CSS file for styling
+import './dashboard.css'; 
 
 function Dashboard() {
   const { students } = useStudent();
 
-  // Calculate total students
   const totalStudents = students.length;
 
-  // Calculate students per class
   const studentsPerClass = students.reduce((acc, student) => {
     acc[student.class] = (acc[student.class] || 0) + 1; 
     return acc;
@@ -20,7 +18,6 @@ function Dashboard() {
   const classLabels = Object.keys(studentsPerClass);
   const classData = Object.values(studentsPerClass);
 
-  // Optional: Prepare data for line chart (e.g., by age)
   const ageData = students.map(student => student.age);
   const ageLabels = students.map(student => student.name);
 
